@@ -13,7 +13,8 @@
   padding: 20px;
 }
 .sidebar{
-  width: 200px;
+  width: 150px;
+  height: 100vh;
   background: #d4e7f4;
   padding: 20px;
   border-radius: 10px;
@@ -38,7 +39,12 @@
 } */
 .navigation_bar{
   display: flex;
+  /* gap: 10px; */
+  margin-left: 10px;
   gap: 10px;
+  height: 40px;
+  /* width: calc(100hw - 150px); */
+  justify-content: space-between;
 }
 .navigation_bar button{
   background: #d4e7f4;
@@ -47,6 +53,19 @@
   border-radius: 20px;
   cursor: pointer;
   font-size: 14px;
+}
+
+main{
+  height: calc(100vh - 40px);
+  width: calc(100hw - 150px);
+  display: flex;
+  justify-self: left;
+  align-self: flex-start;
+  left: 190px;
+  top: 70px;
+  position: absolute;
+  justify-content: center;
+
 }
 .content-section {
   width: 80%;
@@ -92,4 +111,10 @@
 
 .member_details {
   text-align: center;
+}
+
+.contact{
+  display: none;
+  
+  
 }
