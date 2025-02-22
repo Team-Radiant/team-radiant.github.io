@@ -86,7 +86,7 @@
   height: 20rem;
   width: auto;
   margin: 0 auto;
-  align: center;
+  align-items: center;
   border-radius: 8%;
 }
 
