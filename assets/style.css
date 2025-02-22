@@ -71,6 +71,7 @@
 
 .socials a:hover{
   color: #007bff;
+  transition: 0.3s;
 }
   
 .project_card img{
