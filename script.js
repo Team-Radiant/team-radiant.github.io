@@ -1,4 +1,4 @@
-function show_section(sectionid){
+function showSection(sectionid){
     document.querySelectorAll('.content_section').forEach(section => {
         section.classList.add('hidden');
     });
