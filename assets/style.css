@@ -80,3 +80,16 @@
   width: auto;
   margin: 0 auto;
 }
+
+.member_img img{
+  display: flex;
+  height: 20rem;
+  width: auto;
+  margin: 0 auto;
+  align: center;
+  border-radius: 8%;
+}
+
+.member_details {
+  text-align: center;
+}
