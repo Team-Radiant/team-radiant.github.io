@@ -73,4 +73,9 @@
   color: #007bff;
 }
   
-  
+.project_card img{
+  display: flex;
+  height: 20rem;
+  width: auto;
+  margin: 0 auto;
+}
