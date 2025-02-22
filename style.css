@@ -34,10 +34,6 @@
   width: 20px;
   height: 20px;
 }
-.container2{
-  flex: 1;
-  margin-left: 20px;
-}
 .navigation_bar{
   display: flex;
   gap: 10px;
@@ -50,14 +46,15 @@
   cursor: pointer;
   font-size: 14px;
 }
-.nagitavtion_bar .active{
-  background: #92bcd1;
-}
-.container3{
-  background: #d4e7f4;
+.content-section {
+  width: 80%;
+  background-color: #cce0f5;
   padding: 20px;
-  margin-top: 20px;
   border-radius: 10px;
+  margin-top: 20px;
+}
+.hidden {
+  display: none;
 }
   
   

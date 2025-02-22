@@ -17,18 +17,46 @@
                 <a href="#"><img src="https://w7.pngwing.com/pngs/646/324/png-transparent-github-computer-icons-github-logo-monochrome-head-thumbnail.png" alt="Github">Github</a>
             </div>
         </aside>
-        <main class="container2">
             <nav class="navigation_bar">
-                <button class="active">HOME</button>
-                <button>PROJECTS</button>
-                <button>ABOUT US</button>
-                <button>CONTACT</button>
+                <button class="nav-button" onclick="showSection('home')">HOME</button>
+                <button class="nav-button" onclick="showSection('projects')">PROJECTS</button>
+                <button class="nav-button" onclick="showSection('about')">ABOUT US</button>
+                <button class="nav-button" onclick="showSection('contact')">CONTACT</button>
             </nav>
-            <section class="container3">
-                <h2>Home</h2>
-            </section>
-        </main>
-    </div>
-    
+            <div id="home" class="content_section">
+                <h2>HOME</h2>
+                </div>
+            <div id="projects" class="content_section hidden">
+                <h2>PROJECTS</h2>
+                <div class="projects_grid">
+                    <div class="project_card">
+                        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fpngtree.com%2Fso%2Fproject&psig=AOvVaw21bIy0i5ZgpKlsWoHQMDFy&ust=1740297581663000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMjM1vPn1osDFQAAAAAdAAAAABAE" alt="project_img">
+                        <p>PROJECT 01</p>                        
+                    </div>
+                    <div class="project_card">
+                        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fpngtree.com%2Fso%2Fproject&psig=AOvVaw21bIy0i5ZgpKlsWoHQMDFy&ust=1740297581663000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMjM1vPn1osDFQAAAAAdAAAAABAE" alt="project_img">
+                        <p>PROJECT 02</p>                        
+                    </div>
+                    <div class="project_card">
+                        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fpngtree.com%2Fso%2Fproject&psig=AOvVaw21bIy0i5ZgpKlsWoHQMDFy&ust=1740297581663000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMjM1vPn1osDFQAAAAAdAAAAABAE" alt="project_img">
+                        <p>PROJECT 03</p>                        
+                    </div>
+                </div>
+            </div>
+            <div id="about" class="content_section hidden">
+                <h2>ABOUT US</h2>
+                <p>An initiative for excellence in building open-source, useful projects by a group of students.</p>
+            </div> 
+            <div id="contact" class="content_section hidden">
+                <h2>CONTACT</h2>
+                <form>
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email-ID">
+                    <textarea placeholder="Your Message"></textarea>
+                    <button type="submit">SEND</button>
+                </form>
+            </div>
+        </div>
+        <script src="script.js"></script>    
 </body>
 </html>
