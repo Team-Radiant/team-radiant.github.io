@@ -26,7 +26,7 @@
                 <button class="nav-button" onclick="showSection('home')">HOME</button>
                 <button class="nav-button" onclick="showSection('projects')">PROJECTS</button>
                 <button class="nav-button" onclick="showSection('about')">ABOUT US</button>
-                <button class="nav-button" onclick="showSection('members')">Our Members</button>
+                <button class="nav-button" onclick="showSection('members')">OUR MEMBERS</button>
                 <button class="nav-button" onclick="showSection('contact')">CONTACT</button>
             </nav>
             
@@ -59,7 +59,7 @@
             </div> 
 
             <div id="members" class="content_section hidden">
-                <h2>Our Members</h2>
+                <h2>OUR MEMBERS</h2>
                 <p>Meet the Minds Behind <strong>Team Radiant</strong></p>
                 <p>Our organization will thrive with passionate individuals contributing their skills and dedication to open-source development.</p>
                 <br>
@@ -217,13 +217,12 @@
             <div id="contact" class="content_section hidden contact">
                 <h2>CONTACT</h2>
                 <form>
-                    <input type="text" placeholder="Your Name">
-                    <input type="email" placeholder="Your Email-ID">
-                    <textarea placeholder="Your Message"></textarea>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email-ID" required>
+                    <textarea placeholder="Your Message" required></textarea>
                     <button type="submit">SEND</button>
                 </form>
             </div>
-        </div>
 
         </main>
         <script src="assets/script.js"></script>    

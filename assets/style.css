@@ -1,28 +1,83 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
+:root {
+	--header-height: 3rem;
+	/*========== Colors ==========*/
+	--hue-color: 210;
+	/*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+	/* HSL color mode */
+	--first-color: hsl(var(--hue-color), 69%, 61%);
+	--first-color-second: hsl(var(--hue-color), 69%, 61%);
+	--first-color-alt: hsl(var(--hue-color), 57%, 53%);
+	--first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+  --first-color-lighter-2: hsl(var(--hue-color), 92%, 98%);
+	--title-color: hsl(var(--hue-color), 8%, 15%);
+	--text-color: hsl(var(--hue-color), 8%, 45%);
+	--text-color-light: hsl(var(--hue-color), 8%, 65%);
+	--input-color: hsl(var(--hue-color), 70%, 96%);
+	--body-color: hsl(var(--hue-color), 60%, 99%);
+	--container-color: #fff;
+	--scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+	--scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+  --white-color: #fff;
+  --black-color: #000;
+	/*========== Font and typography ==========*/
+	--body-font: "Poppins", sans-serif;
+	/* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+	--big-font-size: 2rem;
+	--h1-font-size: 1.5rem;
+	--h2-font-size: 1.25rem;
+	--h3-font-size: 1.125rem;
+	--normal-font-size: 0.938rem;
+	--small-font-size: 0.813rem;
+	--smaller-font-size: 0.75rem;
+	/*========== Font weight ==========*/
+	--font-medium: 500;
+	--font-semi-bold: 600;
+	/*========== Margenes Bottom ==========*/
+	/* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+	--mb-0-25: 0.25rem;
+	--mb-0-5: 0.5rem;
+	--mb-0-75: 0.75rem;
+	--mb-1: 1rem;
+	--mb-1-5: 1.5rem;
+	--mb-2: 2rem;
+	--mb-2-5: 2.5rem;
+	--mb-3: 3rem;
+	/*========== z index ==========*/
+	--z-tooltip: 10;
+	--z-fixed: 100;
+	--z-modal: 1000;
+}
+
 * { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
 }
+
+body{
+  font-family: var(--body-font);
+  background-color: var(--body-color);
+}
+
 .container1{
   display: flex;
   height: 100vh;
-  background: #f8f9fa;
+  background: var(--first-color-lighter-2);
   padding: 20px;
 }
 .sidebar{
-  width: 150px;
-  height: 100vh;
-  background: #d4e7f4;
-  padding: 20px;
+  width: 10rem;
+  height: auto;
+  background: var(--first-color-lighter);
+  padding: 10px;
   border-radius: 10px;
   text-align: center;
 }
 .logo{
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
   padding: 10px;
 }
 /* .socials a{
@@ -47,17 +102,18 @@
   justify-content: space-between;
 }
 .navigation_bar button{
-  background: #d4e7f4;
+  background: var(--first-color-lighter);
   border: none;
   padding: 10px 20px;
   border-radius: 20px;
   cursor: pointer;
+  font-weight: bold;
   font-size: 14px;
 }
 
 main{
-  height: calc(100vh - 40px);
-  width: calc(100hw - 150px);
+  /* height: calc(100vh - 40px); */
+  /* width: calc(100vw - 150px); */
   display: flex;
   justify-self: left;
   align-self: flex-start;
@@ -69,27 +125,31 @@ main{
 }
 .content-section {
   width: 80%;
-  background-color: #cce0f5;
-  padding: 20px;
+  background-color: var(--first-color-lighter);
+  padding: 50px;
   border-radius: 10px;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 .hidden {
   display: none;
 }
-  
+
+.socials{
+  padding-left: 10px;
+}
 .socials a{
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.7rem;
   text-decoration: none;
-  color: black;
+  color: var(--black-color);
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  margin-top: 10px;
 }
 
 .socials a:hover{
-  color: #007bff;
+  color: var(--first-color);
   transition: 0.3s;
 }
   
@@ -113,8 +173,44 @@ main{
   text-align: center;
 }
 
-.contact{
+/* .contact{
   display: none;
   
   
+} */
+.contact {
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--first-color-lighter);
+  border-radius: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.contact textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.contact button[type="submit"] {
+  background-color: var(--first-color);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 15px 30px;
+  font-weight: var(--font-semi-bold);
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.contact button[type="submit"]:hover {
+  background-color: var(--first-color-alt);
 }
