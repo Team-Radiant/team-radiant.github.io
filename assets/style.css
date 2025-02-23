@@ -174,10 +174,20 @@ main{
   margin: 0 auto;
 }
 
+.member_column {
+  float: left;
+  width: 50%;
+  margin-bottom: 16px;
+  padding: 0px;
+  /*
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;*/
+}
+
 .member_img img{
   display: flex;
-  height: 20rem;
-  width: auto;
+  height: 15rem;
+  width: 12rem;
   margin: 0 auto;
   align-items: center;
   border-radius: 8%;
