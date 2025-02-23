@@ -188,7 +188,7 @@ main{
   display: flex;
   height: 15rem;
   width: 12rem;
-  margin: 0 auto;
+  margin: 16px auto 7px auto ;
   align-items: center;
   border-radius: 8%;
 }
