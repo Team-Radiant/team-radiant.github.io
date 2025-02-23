@@ -11,6 +11,7 @@
 	--first-color-alt: hsl(var(--hue-color), 57%, 53%);
 	--first-color-lighter: hsl(var(--hue-color), 92%, 85%);
   --first-color-lighter-2: hsl(var(--hue-color), 92%, 98%);
+  --first-color-hover: hsl(var(--hue-color),80%,85%)
 	--title-color: hsl(var(--hue-color), 8%, 15%);
 	--text-color: hsl(var(--hue-color), 8%, 45%);
 	--text-color-light: hsl(var(--hue-color), 8%, 65%);
@@ -70,15 +71,24 @@ body{
 .sidebar{
   width: 10rem;
   height: auto;
-  background: var(--first-color-lighter);
-  padding: 10px;
+
+  /* padding: 10px; */
   border-radius: 10px;
   text-align: center;
 }
 .logo{
   font-weight: bold;
-  font-size: 25px;
+  font-size: 2rem;
   padding: 10px;
+  background: var(--first-color-lighter);
+  border-radius: 10px;
+  
+
+}
+.socials{
+  background: var(--first-color-lighter);
+  height: 70%;
+  border-radius: 10px;
 }
 /* .socials a{
   display: flex;
@@ -109,6 +119,10 @@ body{
   cursor: pointer;
   font-weight: bold;
   font-size: 14px;
+}
+.navigation_bar button:hover{
+  background-color: var(--first-color);
+  transition: 0.2s;
 }
 
 main{
