@@ -1,4 +1,6 @@
+  /* Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
 
 :root {
 	--header-height: 3rem;
@@ -71,24 +73,26 @@ body{
 .sidebar{
   width: 10rem;
   height: auto;
-
-  /* padding: 10px; */
-  border-radius: 10px;
   text-align: center;
 }
 .logo{
+  font-family: "Cinzel Decorative", serif;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 10px;
   background: var(--first-color-lighter);
-  border-radius: 10px;
-  
-
+  border-radius: 1rem;
 }
 .socials{
   background: var(--first-color-lighter);
   height: 70%;
-  border-radius: 10px;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.socials a{
+  margin-left: 0.6rem;
 }
 /* .socials a{
   display: flex;
@@ -253,4 +257,9 @@ main{
   padding: 0.2rem;
   font-weight: bold;
   font-size: large;
+}
+
+.contact form textarea{
+  resize: none;
+  min-height: auto;
 }
