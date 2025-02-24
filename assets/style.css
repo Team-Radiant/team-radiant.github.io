@@ -238,3 +238,19 @@ main{
 .contact button[type="submit"]:hover {
   background-color: var(--first-color-alt);
 }
+
+.member_details a{
+  align-items: center;
+  text-decoration: none;
+  color: var(--black-color);
+  padding: 0.3rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.member_details a i{
+  padding: 0.2rem;
+  font-weight: bold;
+  font-size: large;
+}
