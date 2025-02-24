@@ -195,6 +195,7 @@ main{
   margin: 16px auto 7px auto ;
   align-items: center;
   border-radius: 8%;
+  border: 1px solid black;
 }
 
 .member_details {
@@ -262,4 +263,4 @@ main{
 .contact form textarea{
   resize: none;
   min-height: auto;
-}
+  }
