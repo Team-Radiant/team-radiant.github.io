@@ -581,6 +581,9 @@ section{
   font-size: 5rem;
   font-weight: 700;
 }
+.project-text{
+  font-size: 3rem;
+}
 .projects-container {
   display: flex;
   justify-content: center; 
@@ -597,7 +600,7 @@ section{
 }
 
 .project img {
-  width: 250px; 
+  width: 400px; 
   height: auto;
   border-radius: 8px;
 }
