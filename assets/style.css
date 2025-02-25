@@ -1,261 +1,309 @@
   /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
 
-:root {
-	--header-height: 3rem;
-	/*========== Colors ==========*/
-	--hue-color: 210;
-	/*Purple 250 - Green 142 - Blue 230 - Pink 340*/
-	/* HSL color mode */
-	--first-color: hsl(var(--hue-color), 69%, 61%);
-	--first-color-second: hsl(var(--hue-color), 69%, 61%);
-	--first-color-alt: hsl(var(--hue-color), 57%, 53%);
-	--first-color-lighter: hsl(var(--hue-color), 92%, 85%);
-  --first-color-lighter-2: hsl(var(--hue-color), 92%, 98%);
-  --first-color-hover: hsl(var(--hue-color),80%,85%)
-	--title-color: hsl(var(--hue-color), 8%, 15%);
-	--text-color: hsl(var(--hue-color), 8%, 45%);
-	--text-color-light: hsl(var(--hue-color), 8%, 65%);
-	--input-color: hsl(var(--hue-color), 70%, 96%);
-	--body-color: hsl(var(--hue-color), 60%, 99%);
-	--container-color: #fff;
-	--scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
-	--scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
-  --white-color: #fff;
-  --black-color: #000;
-	/*========== Font and typography ==========*/
-	--body-font: "Poppins", sans-serif;
-	/* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
-	--big-font-size: 2rem;
-	--h1-font-size: 1.5rem;
-	--h2-font-size: 1.25rem;
-	--h3-font-size: 1.125rem;
-	--normal-font-size: 0.938rem;
-	--small-font-size: 0.813rem;
-	--smaller-font-size: 0.75rem;
-	/*========== Font weight ==========*/
-	--font-medium: 500;
-	--font-semi-bold: 600;
-	/*========== Margenes Bottom ==========*/
-	/* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
-	--mb-0-25: 0.25rem;
-	--mb-0-5: 0.5rem;
-	--mb-0-75: 0.75rem;
-	--mb-1: 1rem;
-	--mb-1-5: 1.5rem;
-	--mb-2: 2rem;
-	--mb-2-5: 2.5rem;
-	--mb-3: 3rem;
-	/*========== z index ==========*/
-	--z-tooltip: 10;
-	--z-fixed: 100;
-	--z-modal: 1000;
-}
+  :root {
+    --header-height: 3rem;
+    /*========== Colors ==========*/
+    --hue-color: 210;
+    /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    /* HSL color mode */
+    --first-color: hsl(var(--hue-color), 69%, 61%);
+    --first-color-second: hsl(var(--hue-color), 69%, 61%);
+    --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+    --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+    --first-color-lighter-2: hsl(var(--hue-color), 92%, 98%);
+    --first-color-hover: hsl(var(--hue-color), 80%, 85%) --title-color: hsl(var(--hue-color), 8%, 15%);
+    --text-color: hsl(var(--hue-color), 8%, 45%);
+    --text-color-light: hsl(var(--hue-color), 8%, 65%);
+    --input-color: hsl(var(--hue-color), 70%, 96%);
+    --body-color: hsl(var(--hue-color), 60%, 99%);
+    --container-color: #fff;
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+    --white-color: #fff;
+    --black-color: #000;
+    /*========== Font and typography ==========*/
+    --body-font: "Poppins", sans-serif;
+    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813rem;
+    --smaller-font-size: 0.75rem;
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    /*========== Margenes Bottom ==========*/
+    /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+    --mb-0-25: 0.25rem;
+    --mb-0-5: 0.5rem;
+    --mb-0-75: 0.75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+  }
 
-* { 
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+  }
 
-body{
-  font-family: var(--body-font);
-  background: var(--first-color-lighter-2);
-  padding: 1.5rem;
-  overflow-y: scroll;
-}
+  body {
+    font-family: var(--body-font);
+    background: var(--first-color-lighter-2);
+    padding: 1.5rem;
 
-.container1{
-  display: flex;
-}
-.sidebar{
-  width: 10rem;
-  height: auto;
-  text-align: center;
-  align-items: center;
-}
-.logo{
-  font-family: "Cinzel Decorative", serif;
-  font-weight: 900;
-  font-size: 1.5rem;
+    overflow-x: hidden;
+  }
+
+  .container1 {
+    display: flex;
+  }
+
+  .sidebar {
+    width: 10rem;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+  }
+
+  .logo {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    padding: 10px;
+    background: var(--first-color-lighter);
+    border-radius: 2rem;
+    height: 3rem;
+    border: 1px solid black;
+  }
+
+  .socials {
+    background: var(--first-color-lighter);
+    justify-content: space-between;
+    border-radius: 2rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    height: 40rem;
+    border: 1px solid black;
+  }
+
+  .socials a {
+    margin-left: 0.6rem;
+  }
+
+.navigation_bar {
+  position: fixed;
+  top: 10px;
+  right: 0;
+  width: calc(100% - 250px);
+
   padding: 10px;
-  background: var(--first-color-lighter);
-  border-radius: 2rem;
-  height: 3rem;
-  border: 1px solid black;
-}
-.socials{
-  background: var(--first-color-lighter);
-  justify-content: space-between;
-  border-radius: 2rem;
-  padding: 1rem;
-  margin-top: 1rem;
-  height: 40rem;
-  border: 1px solid black;
+  z-index: var(--z-modal);
+
 }
 
-.socials a{
-  margin-left: 0.6rem;
-}
+  .navigation_bar button {
+    background: var(--first-color-lighter);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    height: 3rem;
+    border: 1px solid black;
 
-.navigation_bar{
-  display: flex;
-  margin-left: 10px;
-  gap: 10px;
-  height: 40px;
-  justify-content: space-between;
-}
-.navigation_bar button{
-  background: var(--first-color-lighter);
-  border: none;
-  padding: 10px 20px;
-  border-radius: 2rem;
-  cursor: pointer;
-  font-size: 1.1rem;
-  height: 3rem;
-  border: 1px solid black;
-}
-.navigation_bar button:hover{
-  background-color: var(--first-color);
-  transition: 0.2s;
-}
+  }
 
-main{
-  display: flex;
-  left: 190px;
-  top: 70px;
-  position: absolute;
-}
+  .navigation_bar button:hover {
+    background-color: var(--first-color);
+    transition: 0.2s;
+  }
 
-.content_section{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin: 20px;
-  width: 100%;
-}
+  main {
+    display: flex;
+    left: 190px;
+    top: 88px;
+    position: absolute;
+    position: fixed;
+    width: calc(100vw - 190px );
+    background-color: var(--first-color-second);
+    height: 86%;
+    border-radius: 2rem;
+    border: 1px solid black;
+    overflow: auto;
+    
+  }
 
-.hidden {
-  display: none;
-}
+  .content_section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+    width: 100%;
+    min-height: 100%;
 
-.socials{
-  padding-left: 10px;
-}
-.socials a{
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-  text-decoration: none;
-  color: var(--black-color);
-  font-size: 1.1rem;
-  margin-top: 10px;
-}
+  }
 
-.socials a:hover{
-  color: var(--first-color-alt);
-  transition: 0.3s;
-}
-  
-.project_card img{
-  display: flex;
-  height: 20rem;
-  width: auto;
-  margin: 0 auto;
-}
+  .hidden {
+    display: none;
+  }
 
-.member_column {
-  float: left;
-  width: 50%;
-  margin-bottom: 16px;
-  padding: 0px;
-}
+  .socials {
+    padding-left: 10px;
+  }
 
-.member_img img{
-  display: flex;
-  height: 15rem;
-  width: 12rem;
-  margin: 16px auto 7px auto ;
-  align-items: center;
-  border-radius: 8%;
-  border: 1px solid black;
-}
+  .socials a {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: 1.1rem;
+    margin-top: 10px;
+  }
 
-.member_details {
-  text-align: center;
-}
+  .socials a:hover {
+    color: var(--first-color-alt);
+    transition: 0.3s;
+  }
 
-.project_card{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
+  .projects_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 20px;
+    justify-content: center;
+    margin-left: 10rem;
 
-.project_card img{
-  display: flex;
-  height: 20rem;
-  width: auto;
-  margin: 0 auto;
-  border: 1px solid black;
-  border-radius: 2rem;
-}
-.contact {
-  flex-direction: column;
-  gap: 15px;
-}
+    z-index: 100;
 
-.contact input[type="text"],
-.contact input[type="email"],
-.contact textarea {
-  width: 100%;
-  padding: 10px;
-  border: 0.5px solid black;
-  border-radius: 10px;
-  font-size: 16px;
-  margin-top: 10px;
-}
 
-.contact textarea {
-  height: 150px;
-  resize: vertical;
-}
+  }
 
-.contact button[type="submit"] {
-  background-color: var(--first-color);
-  color: white;
-  border: none;
-  border-radius: 10px;
-  font-size: 16px;
-  cursor: pointer;
-  padding: 15px 30px;
-  font-weight: var(--font-semi-bold);
-  transition: background-color 0.3s ease; /* Smooth transition */
-}
 
-.contact button[type="submit"]:hover {
-  background-color: var(--first-color-alt);
-}
+  .project_card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    border: 1px solid black;
 
-.member_details a{
-  align-items: center;
-  text-decoration: none;
-  color: var(--black-color);
-  padding: 0.3rem;
-  font-weight: bold;
-  font-size: 0.9rem;
-  margin-top: 10px;
-}
+  }
 
-.member_details a i{
-  padding: 0.2rem;
-  font-weight: bold;
-  font-size: large;
-}
+  .project_card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+  }
 
-.contact form textarea{
-  resize: none;
-  min-height: auto;
+  .project_card p {
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .project_card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+  }
+
+  .member_column {
+    float: left;
+    width: 50%;
+    margin-bottom: 16px;
+    padding: 0px;
+  }
+
+  .member_img img {
+    display: flex;
+    height: 15rem;
+    width: 12rem;
+    margin: 16px auto 7px auto;
+    align-items: center;
+    border-radius: 8%;
+    border: 1px solid black;
+  }
+
+  .member_details {
+    text-align: center;
+  }
+
+
+  .contact {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .contact input[type="text"],
+  .contact input[type="email"],
+  .contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 0.5px solid black;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .contact textarea {
+    height: 150px;
+    resize: vertical;
+  }
+
+  .contact button[type="submit"] {
+    background-color: var(--first-color);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+    font-weight: var(--font-semi-bold);
+    transition: background-color 0.3s ease;
+    /* Smooth transition */
+  }
+
+  .contact button[type="submit"]:hover {
+    background-color: var(--first-color-alt);
+  }
+
+  .member_details a {
+    align-items: center;
+    text-decoration: none;
+    color: var(--black-color);
+    padding: 0.3rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+
+  .member_details a i {
+    padding: 0.2rem;
+    font-weight: bold;
+    font-size: large;
+  }
+
+  .contact form textarea {
+    resize: none;
+    min-height: auto;
   }
 
   ::-webkit-scrollbar {
@@ -263,10 +311,16 @@ main{
     background-color: var(--scroll-bar-color);
     border-radius: 0.5rem;
   }
+
   ::-webkit-scrollbar-thumb {
     background-color: var(--scroll-thumb-color);
     border-radius: 0.5rem;
   }
+
   ::-webkit-scrollbar-thumb:hover {
     background-color: var(--text-color-light);
   }
+
+
+
+  
