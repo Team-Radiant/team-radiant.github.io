@@ -201,6 +201,7 @@ body{
     width: 100%;
     z-index: 1000;
     padding: 4rem 12% 4rem;
+    padding-top: 75px;
     display: flex;
     justify-content: space-between;
     align-items: center;
