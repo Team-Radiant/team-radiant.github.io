@@ -1,300 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--==================== UNICONS ====================-->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-    <link rel="stylesheet" href="assets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Team Radiant</title>
-
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 </head>
-
 <body>
-    <div class="container1">
-        <aside class="sidebar">
-            <div class="logo">Radiant</div>
-            <div class="socials">
-                <a href="https://www.linkedin.com/company/team-radiant" target="blank"> <i
-                        class="uil uil-linkedin"></i>LinkedIn
-                </a>
-                <a href="https://github.com/Team-Radiant" target="blank"> <i
-                        class="uil uil-github"></i>Github
-                </a>
-                <a href="mailto:test@gmail.com" target="blank"> <i
-                        class="uil uil-envelope"></i>Email
-                </a>
-            </div>
-        </aside>
-        <nav class="navigation_bar">
-            <button class="nav-button" onclick="showSection('home')">Home</button>
-            <button class="nav-button" onclick="showSection('projects')">Projects</button>
-            <button class="nav-button" onclick="showSection('about')">About Us</button>
-            <button class="nav-button" onclick="showSection('members')">Members</button>
-            <button class="nav-button" onclick="showSection('contact')">Contact</button>
+    <!-- <div class='rainbow'></div>
+    <div class='rainbow'></div>
+    <div class='rainbow'></div>
+    <div class='rainbow'></div>
+    <div class='rainbow'></div>
+    <div class='rainbow'></div>
+    <div class='rainbow'></div>
+    <div class='rainbow'></div>
+    <div class='rainbow'></div>
+    <div class='rainbow'></div>
+    <div class='rainbow'></div>
+    <div class='rainbow'></div>
+    <div class='rainbow'></div>
+    <div class='rainbow'></div>
+    <div class='rainbow'></div>
+    <div class='rainbow'></div>
+    <div class='rainbow'></div>
+    <div class='rainbow'></div>
+    <div class='rainbow'></div>
+    <div class='rainbow'></div>
+    <div class='rainbow'></div>
+    <div class='rainbow'></div>
+    <div class='rainbow'></div>
+    <div class='rainbow'></div>
+    <div class='rainbow'></div>
+    <div class='h'></div>
+    <div class='v'></div> -->
+    <header class="header">
+        <a href="#home" class="logo">Team<span> Radiant</span></a>
+        <i class="uil uil-bars" id="menu"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#aboutus">About Us</a>
+            <a href="#projects">Projects</a>
+            <a href="#members">Members</a>
+            <a href="#contact">Contact</a>
         </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hello, Welcome to <span>Radiants</span>
+            </h1>
+            <h3 class="home-content-h3">An Initiative for excellence in building <strong><span>Open-Source</span></strong>, useful <strong><span>Real-World</span></strong> projects by a group of students.</h3>
+            <p>IDK if we need this section. If we get something useless to add here, then fine else we can remove it.</p>
+            <div class="social-icons">
+                <a href="https://github.com/Team-Radiant" target="blank"><i class="uil uil-github"></i></a>
+                <a href="https://www.linkedin.com/company/team-radiant" target="blank"><i class="uil uil-linkedin"></i></a>
+                <a href="mailto:test@gmail.com" target="blank"><i class="uil uil-envelopes"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="aboutus" id="aboutus">
+    <div class="aboutus-content">
+        <h2>About Us</h2>
+        <h5 class="aboutus-text">
+            <span class="strong">Powering Innovation: Student-Led Open Source Initiative! 💡</span><br>
+Introducing Team Radiant, a group of passionate students and founding members – Shabbir Ezzy, Pranav Choudhary, Sagar Datkhile, Sidra Chaudhari , Vishal Raut, Pushkar Gaikwad, Guruvesh Bachhav, Nimish Sinkar, and Shraddha Gangurde – committed to building open-source projects that solve real-world problems. We're fostering a collaborative environment where students learn from each other, contribute on GitHub, and develop in-demand skills.
+Starting with foundational languages, we'll embark on a journey of learning and building, with healthy competition and mutual support driving us forward.
+Objectives of the team:</h5>
+<ul class="aboutus-list">
+ <li>Learn new technologies from the ground up.</li>
+ <li>Collaborate on impactful open-source projects.</li>
+ <li>Build a strong GitHub portfolio.</li>
+ <li>Be part of a supportive and driven student network.</li>
+</ul>
+        
+    </div>
+    </section>
+    
+    <section class="members" id="members">
+    <div class="members-content">
+        <h2>Our Members</h2>
+        <h5 class="members-text">Meet the Minds Behind <strong><span>Team Radiant</span></strong></h5>
+    </div>
+    </section>
 
 
-        <main class="data-section">
-            <div id="home" class="content_section">
-                <h2>Home</h2>
-            </div>
-            <div id="projects" class="content_section hidden">
-                <h2>Projects</h2>
-                <div class="projects_grid">
-                    <div class="project_card">
-                        <img src="assets/img/project_placeholder.png" alt="project_img">
-                        <p>PROJECT 01</p>
-                    </div>
-                    <div class="project_card">
-                        <img src="assets/img/project_placeholder.png" alt="project_img">
-                        <p>PROJECT 02</p>
-                    </div>
-                    <div class="project_card">
-                        <img src="assets/img/project_placeholder.png" alt="project_img">
-                        <p>PROJECT 03</p>
-                    </div>
-                    <div class="project_card">
-                        <img src="assets/img/project_placeholder.png" alt="project_img">
-                        <p>PROJECT 04</p>
-                    </div>
-                    <div class="project_card">
-                        <img src="assets/img/project_placeholder.png" alt="project_img">
-                        <p>PROJECT 05</p>
-                    </div>
-                    <div class="project_card">
-                        <img src="assets/img/project_placeholder.png" alt="project_img">
-                        <p>PROJECT 06</p>
-                    </div>
-                </div>
-            </div>
-            <div id="about" class="content_section hidden">
-                <h2>About Us</h2>
-                <p>An initiative for excellence in building open-source, useful projects by a group of students.</p>
-            </div>
 
-            <div id="members" class="content_section hidden">
-                <h2>Our Members</h2>
-                <p>Meet the Minds Behind <strong>Team Radiant</strong></p>
-                <p>Our organization will thrive with passionate individuals contributing their skills and dedication to
-                    open-source development.</p>
-                <br>
-                <!--added pfp in line center aligned-->
-                <!--shabbir-->
-                <br>
-                <div class="row"><!--start of row 1-->
-                <div class="member_column">
-                <div class="member_img">
-                    <img src="assets/members img/shabbir_ezzy.jpg" alt="LOADING..." width="400" height="500">
-                </div>
-                <div class="member_details">
-                    <h3>Shabbir Ezzy</h3>
-                    <div>
-                        <a href="https://www.linkedin.com/in/ezzyshabbir05/" target="blank">
-                            <i class="uil uil-linkedin"></i>LinkedIn
-                        </a>
-                        <a href="https://github.com/ezzyshabbir05" target="blank"> <i
-                                class="uil uil-github"></i>Github
-                        </a>
-                        <a href="mailto:ezzyshabbir05@gmail.com" target="blank"> <i
-                                class="uil uil-envelope"></i>Email
-                        </a>
-                    </div>
-                </div>
-            </div>
-                <!--pushkar-->
-                <div class="member_column">
-                <div class="member_img">
-                    <img src="assets/members img/pushkar_gaikwad.jpg" alt="LOADING..." width="400" height="500">
-                </div>
-                <div class="member_details">
-                    <h3>Pushkar Gaikwad</h3>
-                    <div>
-                        <a href="https://www.linkedin.com/in/pushkar2510" target="blank"> <i
-                                class="uil uil-linkedin"></i>LinkedIn
-                        </a>
-                        <a href="https://github.com/pushkar2510" target="blank"> <i
-                                class="uil uil-github"></i>Github
-                        </a>
-                        <a href="mailto:pushkargaikwad25@gmail.com" target="blank"> <i
-                                class="uil uil-envelope"></i>Email
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div><!--end of row 1 shabbir | pushkar-->
-
-                <!--pranav-->
-                <br>
-                <div class="row"><!--start of row 2-->
-                <div class="member_column">
-                <div class="member_img">
-                    <img src="assets/members img/pushkargaikwad.jpg" alt="LOADING..." width="400" height="500">
-                </div>
-                <div class="member_details">
-                    <h3>Pranav Choudhary</h3>
-                    <div>
-                        <a href="https://www.linkedin.com/in/pranav-choudhary-153084240/" target="blank"
-                           > <i class="uil uil-linkedin"></i>LinkedIn
-                        </a>
-                        <a href="https://github.com/PRANAVC16" target="blank"> <i
-                                class="uil uil-github"></i>Github
-                        </a>
-                        <a href="mailto:test@gmail.com" target="blank"> <i
-                                class="uil uil-envelope"></i>Email
-                        </a>
-                    </div>
-                </div>
-            </div>
-                <!--vishal-->
-                <div class="member_column">
-                <div class="member_img">
-                    <img src="assets/members img/Vishal_Raut.jpg" alt="LOADING..." width="400" height="500">
-                </div>
-                <div class="member_details">
-                    <h3>Vishal Raut</h3>
-                    <div>
-                        <a href="https://www.linkedin.com/in/rautvishal1" target="blank"> <i
-                                class="uil uil-linkedin"></i>LinkedIn
-                        </a>
-                        <a href="https://github.com/vishalraut2106" target="blank"> <i
-                                class="uil uil-github"></i>Github
-                        </a>
-                        <a href="mailto:test@gmail.com" target="blank"> <i
-                                class="uil uil-envelope"></i>Email
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div><!--end of row 2-->
-
-                <!--Nimish-->
-                <br>
-                <div class="row"><!--start of row 3-->
-                <div class="member_column">
-                <div class="member_img">
-                    <img src="assets/members img/" alt="LOADING..." width="400" height="500">
-                </div>
-                <div class="member_details">
-                    <h3>Nimish Sinkar</h3>
-                    <div>
-                        <a href="https://www.linkedin.com/in/rautvishal1" target="blank"> <i
-                                class="uil uil-linkedin"></i>LinkedIn
-                        </a>
-                        <a href="https://github.com/nimish-23" target="blank"> <i
-                                class="uil uil-github"></i>Github
-                        </a>
-                        <a href="mailto:test@gmail.com" target="blank"> <i
-                                class="uil uil-envelope"></i>Email
-                        </a>
-                    </div>
-                </div>
-            </div>
-                <!--Sidra-->
-                <div class="member_column">
-                <div class="member_img">
-                    <img src="assets/members img/sidra_chaudhari.jpg" alt="LOADING..." width="400" height="500">
-                    <!--<img src="assets/members img/" alt="LOADING..." width="400" height="500">-->
-                </div>
-                <div class="member_details">
-                    <h3>Sidra Chaudhari</h3>
-                    <div>
-                        <a href="www.linkedin.com/in/sidra-chaudhari-16425b29b" target="blank"> <i
-                                class="uil uil-linkedin"></i>LinkedIn
-                        </a>
-                        <a href="https://github.com/sidrahere96" target="blank"> <i
-                                class="uil uil-github"></i>Github
-                        </a>
-                        <a href="mailto:test@gmail.com" target="blank"> <i
-                                class="uil uil-envelope"></i>Email
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div><!--end of row 3-->
-
-                <!--Sagar-->
-                <br>
-                <div class="row"><!--start of row 4-->
-                <div class="member_column">
-                <div class="member_img">
-                    <img src="assets\members img\sagar_datkhile.jpg" alt="LOADING..." width="400" height="500">
-                </div>
-                <div class="member_details">
-                    <h3>Sagar Datkhile</h3>
-                    <div>
-                        <a href="https://www.linkedin.com/in/sagar-datkhile/" target="blank">
-                            <i class="uil uil-linkedin"></i>LinkedIn
-                        </a>
-                        <a href="https://github.com/Sagar-Datkhile" target="blank"> <i
-                                class="uil uil-github"></i>Github
-                        </a>
-                        <a href="mailto:sagardatkhile.official@gmail.com" target="blank"> <i
-                                class="uil uil-envelope"></i>Email
-                        </a>
-                    </div>
-                </div>
-            </div>
-                <!--Guruvesh-->
-                <div class="member_column">
-                <div class="member_img">
-                    <img src="assets/members img/" alt="LOADING..." width="400" height="500">
-                </div>
-                <div class="member_details">
-                    <h3>Guruvesh Bacchav</h3>
-                    <div>
-                        <a href="https://www.linkedin.com/in/rautvishal1" target="blank"> <i
-                                class="uil uil-linkedin"></i>LinkedIn
-                        </a>
-                        <a href="https://github.com/vishalraut2106" target="blank"> <i
-                                class="uil uil-github"></i>Github
-                        </a>
-                        <a href="mailto:test@gmail.com" target="blank"> <i
-                                class="uil uil-envelope"></i>Email
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div><!--end of row 4-->
-
-        <!--Shraddha-->
-                <br>
-                <div class="member_img">
-                    <img src="assets/members img/" alt="LOADING..." width="400" height="500">
-                </div>
-                <div class="member_details">
-                    <h3>Shraddha Gangurde</h3>
-                    <div>
-                        <a href="https://www.linkedin.com/in/rautvishal1" target="blank"> <i
-                                class="uil uil-linkedin"></i>LinkedIn
-                        </a>
-                        <a href="https://github.com/vishalraut2106" target="blank"> <i
-                                class="uil uil-github"></i>Github
-                        </a>
-                        <a href="mailto:test@gmail.com" target="blank"> <i
-                                class="uil uil-envelope"></i>Email
-                        </a>
-                    </div>
-                </div>
-                <br>
-                <br>
-            </div> <!--end of our members nav-->
-
-
-            <!-- Contacts are hidden for now -> CSS -->
-            <div id="contact" class="content_section hidden contact">
-                <h2>Contact</h2>
-                <form>
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email-ID" required>
-                    <textarea placeholder="Your Message" required></textarea>
-                    <button type="submit">SEND</button>
-                </form>
-            </div>
-
-        </main>
-        <script src="assets/script.js"></script>
 </body>
-
+<script src="script.js"></script>
 </html>

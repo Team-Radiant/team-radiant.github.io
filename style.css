@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --background-color: #fff;
+    --second-background-color: #fff;
+    --text-color: black;
+    --main-color: #00556e;
+}
+
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--background-color);
+    color: var(--text-color);
+    overflow: hidden;
+}
+ 
+  .rainbow {
+    height: 100vh;
+    width: 0;
+    top: 0;
+    position: absolute;
+    transform: rotate(10deg);
+    transform-origin: top right;
+    z-index: -1;
+    filter: blur(50px);
+  }
+  .rainbow:nth-child(1) {
+    box-shadow: -130px 0 80px 40px white, -50px 0 50px 25px #f4a9ff, 0 0 50px 25px #60a5fa, 50px 0 50px 25px #5eead4, 130px 0 80px 40px white;
+    animation: 44.1s linear infinite slide;
+    animation-delay: -1.8s;
+  }
+  .rainbow:nth-child(2) {
+    box-shadow: -130px 0 80px 40px white, -50px 0 50px 25px #60a5fa, 0 0 50px 25px #5eead4, 50px 0 50px 25px #e879f9, 130px 0 80px 40px white;
+    animation: 43.2s linear infinite slide;
+    animation-delay: -3.6s;
+  }
+  .rainbow:nth-child(3) {
+    box-shadow: -130px 0 80px 40px white, -50px 0 50px 25px #f4a9ff, 0 0 50px 25px #5eead4, 50px 0 50px 25px #60a5fa, 130px 0 80px 40px white;
+    animation: 42.3s linear infinite slide;
+    animation-delay: -5.4s;
+  }
+  .rainbow:nth-child(4) {
+    box-shadow: -130px 0 80px 40px white, -50px 0 50px 25px #60a5fa, 0 0 50px 25px #5eead4, 50px 0 50px 25px #e879f9, 130px 0 80px 40px white;
+    animation: 41.4s linear infinite slide;
+    animation-delay: -7.2s;
+  }
+  .rainbow:nth-child(5) {
+    box-shadow: -130px 0 80px 40px white, -50px 0 50px 25px #f4a9ff, 0 0 50px 25px #5eead4, 50px 0 50px 25px #60a5fa, 130px 0 80px 40px white;
+    animation: 40.5s linear infinite slide;
+    animation-delay: -9s;
+  }
+  .rainbow:nth-child(6) {
+    box-shadow: -130px 0 80px 40px white, -50px 0 50px 25px #60a5fa, 0 0 50px 25px #e879f9, 50px 0 50px 25px #5eead4, 130px 0 80px 40px white;
+    animation: 39.6s linear infinite slide;
+    animation-delay: -10.8s;
+  }
+  .rainbow:nth-child(7) {
+    box-shadow: -130px 0 80px 40px white, -50px 0 50px 25px #5eead4, 0 0 50px 25px #60a5fa, 50px 0 50px 25px #e879f9, 130px 0 80px 40px white;
+    animation: 38.7s linear infinite slide;
+    animation-delay: -12.6s;
+  }
+  .rainbow:nth-child(8) {
+    box-shadow: -130px 0 80px 40px white, -50px 0 50px 25px #60a5fa, 0 0 50px 25px #5eead4, 50px 0 50px 25px #e879f9, 130px 0 80px 40px white;
+    animation: 37.8s linear infinite slide;
+    animation-delay: -14.4s;
+  }
+  .rainbow:nth-child(9) {
+    box-shadow: -130px 0 80px 40px white, -50px 0 50px 25px #5eead4, 0 0 50px 25px #e879f9, 50px 0 50px 25px #60a5fa, 130px 0 80px 40px white;
+    animation: 36.9s linear infinite slide;
+    animation-delay: -16.2s;
+  }
+  .rainbow:nth-child(10) {
+    box-shadow: -130px 0 80px 40px white, -50px 0 50px 25px #f4a9ff, 0 0 50px 25px #60a5fa, 50px 0 50px 25px #5eead4, 130px 0 80px 40px white;
+    animation: 36s linear infinite slide;
+    animation-delay: -18s;
+  }
+  .rainbow:nth-child(11) {
+    box-shadow: -130px 0 80px 40px white, -50px 0 50px 25px #f4a9ff, 0 0 50px 25px #60a5fa, 50px 0 50px 25px #5eead4, 130px 0 80px 40px white;
+    animation: 35.1s linear infinite slide;
+    animation-delay: -19.8s;
+  }
+  .rainbow:nth-child(12) {
+    box-shadow: -130px 0 80px 40px white, -50px 0 50px 25px #60a5fa, 0 0 50px 25px #5eead4, 50px 0 50px 25px #e879f9, 130px 0 80px 40px white;
+    animation: 34.2s linear infinite slide;
+    animation-delay: -21.6s;
+  }
+  .rainbow:nth-child(13) {
+    box-shadow: -130px 0 80px 40px white, -50px 0 50px 25px #5eead4, 0 0 50px 25px #e879f9, 50px 0 50px 25px #60a5fa, 130px 0 80px 40px white;
+    animation: 33.3s linear infinite slide;
+    animation-delay: -23.4s;
+  }
+  .rainbow:nth-child(14) {
+    box-shadow: -130px 0 80px 40px white, -50px 0 50px 25px #5eead4, 0 0 50px 25px #e879f9, 50px 0 50px 25px #60a5fa, 130px 0 80px 40px white;
+    animation: 32.4s linear infinite slide;
+    animation-delay: -25.2s;
+  }
+  .rainbow:nth-child(15) {
+    box-shadow: -130px 0 80px 40px white, -50px 0 50px 25px #5eead4, 0 0 50px 25px #60a5fa, 50px 0 50px 25px #e879f9, 130px 0 80px 40px white;
+    animation: 31.5s linear infinite slide;
+    animation-delay: -27s;
+  }
+  .rainbow:nth-child(16) {
+    box-shadow: -130px 0 80px 40px white, -50px 0 50px 25px #5eead4, 0 0 50px 25px #e879f9, 50px 0 50px 25px #60a5fa, 130px 0 80px 40px white;
+    animation: 30.6s linear infinite slide;
+    animation-delay: -28.8s;
+  }
+  .rainbow:nth-child(17) {
+    box-shadow: -130px 0 80px 40px white, -50px 0 50px 25px #f4a9ff, 0 0 50px 25px #60a5fa, 50px 0 50px 25px #5eead4, 130px 0 80px 40px white;
+    animation: 29.7s linear infinite slide;
+    animation-delay: -30.6s;
+  }
+  .rainbow:nth-child(18) {
+    box-shadow: -130px 0 80px 40px white, -50px 0 50px 25px #5eead4, 0 0 50px 25px #e879f9, 50px 0 50px 25px #60a5fa, 130px 0 80px 40px white;
+    animation: 28.8s linear infinite slide;
+    animation-delay: -32.4s;
+  }
+  .rainbow:nth-child(19) {
+    box-shadow: -130px 0 80px 40px white, -50px 0 50px 25px #5eead4, 0 0 50px 25px #e879f9, 50px 0 50px 25px #60a5fa, 130px 0 80px 40px white;
+    animation: 27.9s linear infinite slide;
+    animation-delay: -34.2s;
+  }
+  .rainbow:nth-child(20) {
+    box-shadow: -130px 0 80px 40px white, -50px 0 50px 25px #5eead4, 0 0 50px 25px #e879f9, 50px 0 50px 25px #60a5fa, 130px 0 80px 40px white;
+    animation: 27s linear infinite slide;
+    animation-delay: -36s;
+  }
+  .rainbow:nth-child(21) {
+    box-shadow: -130px 0 80px 40px white, -50px 0 50px 25px #60a5fa, 0 0 50px 25px #5eead4, 50px 0 50px 25px #e879f9, 130px 0 80px 40px white;
+    animation: 26.1s linear infinite slide;
+    animation-delay: -37.8s;
+  }
+  .rainbow:nth-child(22) {
+    box-shadow: -130px 0 80px 40px white, -50px 0 50px 25px #60a5fa, 0 0 50px 25px #5eead4, 50px 0 50px 25px #e879f9, 130px 0 80px 40px white;
+    animation: 25.2s linear infinite slide;
+    animation-delay: -39.6s;
+  }
+  .rainbow:nth-child(23) {
+    box-shadow: -130px 0 80px 40px white, -50px 0 50px 25px #f4a9ff, 0 0 50px 25px #5eead4, 50px 0 50px 25px #60a5fa, 130px 0 80px 40px white;
+    animation: 24.3s linear infinite slide;
+    animation-delay: -41.4s;
+  }
+  .rainbow:nth-child(24) {
+    box-shadow: -130px 0 80px 40px white, -50px 0 50px 25px #5eead4, 0 0 50px 25px #e879f9, 50px 0 50px 25px #60a5fa, 130px 0 80px 40px white;
+    animation: 23.4s linear infinite slide;
+    animation-delay: -43.2s;
+  }
+  .rainbow:nth-child(25) {
+    box-shadow: -130px 0 80px 40px white, -50px 0 50px 25px #5eead4, 0 0 50px 25px #60a5fa, 50px 0 50px 25px #e879f9, 130px 0 80px 40px white;
+    animation: 22.5s linear infinite slide;
+    animation-delay: -45s;
+  }
+  
+  @keyframes slide {
+    from {
+      right: -25vw;
+    }
+    to {
+      right: 125vw;
+    }
+  }
+  .h {
+    box-shadow: 0 0 50vh 40vh white;
+    width: 100vw;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .v {
+    box-shadow: 0 0 35vw 25vw white;
+    width: 0;
+    height: 100vh;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 9rem;
+    width: 100%;
+    z-index: 1000;
+    padding: 4rem 12% 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header.navblur {
+  backdrop-filter: blur(22px);
+  background: rgba(255, 255, 255, 0.5);
+}
+
+
+.logo{
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.logo span{
+    font-family: "Poppins", sans-serif;
+    color: var(--main-color);
+}
+
+.navbar a{
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.2s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+#menu{
+    font-size: 3.6rem;
+    color: var(--main-color);
+    display: none;
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 12% 10rem;
+    padding-top: 150px;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    gap: 15rem;
+}
+
+.home-content{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: left;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.home-content span{
+    color: var(--main-color);
+}
+
+.home-content h3{
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 3rem;
+}
+
+.home-content h1{
+    font-size: 7rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    line-height: 1;
+}
+
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    font-size: 2.5rem;
+    border-radius: 50%;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover{
+    color: var(--text-color);
+    border-color: var(--text-color);
+    transform: scale(1.1)translateY(-5px);
+}
+
+.home-content-h3{
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.strong{
+  font-weight: 600;
+}
+
+.aboutus{
+    display: flex;
+    gap: 15rem;
+}
+
+/* about us style section */
+.aboutus-content span{
+  color: var(--main-color);
+}
+/*
+.aboutus-content p{
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  font-size: 3rem;
+}*/
+
+.aboutus-content h2{
+  font-size: 5rem;
+  font-weight: 700;
+  padding-top: 1.5rem;
+  line-height: 1;
+}
+
+.aboutus-text{
+  font-weight: 500;
+  font-size: 2.5rem;
+  min-width: 280px;
+  padding-top: 2rem;
+}
+
+.aboutus-list{
+  font-weight: 500;
+  font-size: 2.5rem;
+  min-width: 280px;
+  padding-top: 1.4rem;
+  padding-left: 5rem;
+}
+
+/*members style section*/
+
+.members{
+    display: flex;
+    gap: 15rem;
+}
+
+.members-content span{
+  color: var(--main-color);
+}
+/*
+.members-content p{
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  font-size: 3rem;
+}*/
+
+.members-content h2{
+  font-size: 5rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  line-height: 1;
+}
+
+.members-text{
+  font-weight: 500;
+  font-size: 2.5rem;
+  min-width: 280px;
+  padding-top: 2rem;
+}
