@@ -640,6 +640,13 @@ section{
 .section.active {
   display: block;
 }
+/* Members */
+.row-1{
+  display: flex;
+  width: 30%;
+  gap: 1rem;
+  flex-direction: row;
+}
 
 
 /* Contact */
