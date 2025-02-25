@@ -652,9 +652,25 @@ section{
   flex-direction: row;
 }
 
+.row-2{
+  display: flex;
+  width: 30%;
+  gap: 1rem;
+  flex-direction: row;
+}
+
+.row-3{
+  display: flex;
+  width: 30%;
+  gap: 1rem;
+  flex-direction: row;
+}
+
+
+
 
 /* Contact */
-<<<<<<< Updated upstream
+
 
 #contact-form{
   position: absolute;
@@ -662,14 +678,14 @@ section{
   margin-top: 3rem;
 }
 
-=======
+
 #contact{
   position: absolute;
   width: 700px;
 }
 
 
->>>>>>> Stashed changes
+
 form {
   display: flex;
   flex-direction: column;
