@@ -244,8 +244,8 @@ html {
   min-height: 100vh;
   background: white;
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
+  justify-content: center;
+  align-items: center;
 } */
 
   .rainbow {
