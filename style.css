@@ -765,7 +765,7 @@ button:hover {
   height: 9rem;
   align-items:flex-end;
   display:inline-block;
-  
+
 
 
 
@@ -786,5 +786,5 @@ button:hover {
 }
 
 .footer-social a:hover {
-  color: #f39c12;
+  color: var(--main-color);
 }
