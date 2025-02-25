@@ -654,7 +654,6 @@ section{
 
 
 /* Contact */
-<<<<<<< Updated upstream
 
 #contact-form{
   position: absolute;
@@ -662,14 +661,12 @@ section{
   margin-top: 3rem;
 }
 
-=======
 #contact{
   position: absolute;
   width: 700px;
 }
 
 
->>>>>>> Stashed changes
 form {
   display: flex;
   flex-direction: column;
