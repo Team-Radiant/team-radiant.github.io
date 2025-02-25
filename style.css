@@ -32,7 +32,7 @@ body{
 
 
 .loader {
-  --path: white;
+  --path: black;
   --dot: #f40af0;
   --duration: 3s;
   width: 44px;
@@ -240,13 +240,13 @@ html {
   box-sizing: border-box;
 }
 
-body {
+/* body {
   min-height: 100vh;
   background: white;
   display: flex;
   /* justify-content: center;
   align-items: center; */
-}
+} */
 
   .rainbow {
     height: 100vh;
