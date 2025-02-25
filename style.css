@@ -640,6 +640,13 @@ section{
 
 
 /* Contact */
+
+#contact-form{
+  position: absolute;
+  width: 700px;
+  margin-top: 3rem;
+}
+
 form {
   display: flex;
   flex-direction: column;
