@@ -356,6 +356,28 @@ section{
   padding-top: 1.4rem;
   padding-left: 5rem;
 }
+/* projects style section*/
+
+.projects-container {
+  display: flex;
+  justify-content: center; 
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project {
+  text-align: center; 
+  background: #f8f9fa; 
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+  width: 200px; 
+  height: auto;
+  border-radius: 8px;
+}
 
 /*members style section*/
 
