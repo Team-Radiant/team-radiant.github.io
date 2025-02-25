@@ -670,7 +670,10 @@ section{
 
 
 /* Contact */
+<<<<<<< HEAD
 
+=======
+>>>>>>> ea577a6c623e931243c347770e0d7d592e478eb5
 
 #contact-form{
   position: absolute;
@@ -678,14 +681,20 @@ section{
   margin-top: 3rem;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ea577a6c623e931243c347770e0d7d592e478eb5
 #contact{
   position: absolute;
   width: 700px;
 }
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ea577a6c623e931243c347770e0d7d592e478eb5
 form {
   display: flex;
   flex-direction: column;
