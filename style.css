@@ -758,8 +758,9 @@ button:hover {
   color: white;
   text-align: center;
   padding: 20px 10px;
-  position: relative;
-  bottom: 0;
+  position: absolute;
+  
+  bottom: -5000px;
   width: 100%;
   align-items:flex-end;
   display:inline-block;
