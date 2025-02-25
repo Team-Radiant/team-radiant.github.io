@@ -577,7 +577,10 @@ section{
   padding-left: 5rem;
 }
 /* projects style section*/
-
+.project-text h2{
+  font-size: 5rem;
+  font-weight: 700;
+}
 .projects-container {
   display: flex;
   justify-content: center; 
