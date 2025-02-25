@@ -616,6 +616,16 @@ section{
 .members-content span{
   color: var(--main-color);
 }
+
+.member_details>h3{
+  font-size: x-large;
+}
+.member_details>h3:hover{
+  color: #00556E;
+}
+.socialMediaLinks{
+  font-size: small;
+}
 /* .member_img{
   height: 60rem;
 } */
@@ -648,24 +658,44 @@ section{
   display: block;
 }
 /* Members */
+.member_img>img{
+  width:35rem;
+  height: 40rem;
+  transition: smooth;
+  border-radius: 8px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3), -3px -3px 10px rgba(0, 0, 0, 0.2);
+}
+.member_img>img:hover{
+  box-shadow: 0px 0px 20px rgba(96, 107, 96, 0.8);
+  
+}
+ .row{
+  width: fit-content;
+  height: fit-content;
+  /* margin: auto; */
+ }
 .row-1{
   display: flex;
   width: 30%;
-  gap: 1rem;
+  gap: 8rem;
   flex-direction: row;
+  
 }
+
 
 .row-2{
   display: flex;
+  justify-content: space-evenly;
   width: 30%;
-  gap: 1rem;
+  gap: 8rem;
   flex-direction: row;
 }
 
 .row-3{
   display: flex;
+  justify-content: space-evenly;
   width: 30%;
-  gap: 1rem;
+  gap: 8rem;
   flex-direction: row;
 }
 
