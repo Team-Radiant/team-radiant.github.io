@@ -623,8 +623,14 @@ section{
 .member_details>h3:hover{
   color: #00556E;
 }
-.socialMediaLinks{
+.socialMediaLinks>a{
   font-size: small;
+  color: #551A8B;
+}
+
+.socialMediaLinks>a:hover{
+  /* color: #00556E; */
+  border-bottom: 1px solid #00556E;
 }
 /* .member_img{
   height: 60rem;
