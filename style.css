@@ -616,6 +616,9 @@ section{
 .members-content span{
   color: var(--main-color);
 }
+/* .member_img{
+  height: 60rem;
+} */
 /*
 .members-content p{
   margin-bottom: 2rem;
@@ -670,31 +673,19 @@ section{
 
 
 /* Contact */
-<<<<<<< HEAD
-
-=======
->>>>>>> ea577a6c623e931243c347770e0d7d592e478eb5
 
 #contact-form{
   position: absolute;
-  width: 700px;
+  width: 450px;
   margin-top: 3rem;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> ea577a6c623e931243c347770e0d7d592e478eb5
 #contact{
   position: absolute;
   width: 700px;
 }
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> ea577a6c623e931243c347770e0d7d592e478eb5
 form {
   display: flex;
   flex-direction: column;
