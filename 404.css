@@ -19,8 +19,7 @@ body{
 
 .image{
     height: 80%;
-    background-color: aqua;
-    background-image: url();
+    background-image: url('/team-radiant.github.io/assets/404 image/img.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
