@@ -613,6 +613,13 @@ section{
     gap: 15rem;
 }
 
+/* .members-content{
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  margin-top: 3rem;
+} */
+
 .members-content span{
   color: var(--main-color);
 }
@@ -667,7 +674,6 @@ section{
 .member_img{
   width:35rem;
   height: 40rem;
-  
   border-radius: 8px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3), -3px -3px 10px rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -675,6 +681,7 @@ section{
 .member_img>img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   transition: transform 0.3s ease-in-out;
 }
 .member_img>img:hover{
