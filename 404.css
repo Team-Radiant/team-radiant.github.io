@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.main{
+    height: 70vh;
+    width: 40vw;
+    padding: 10px;   
+}
+
+.image{
+    height: 80%;
+    background-color: aqua;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.containt{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text{
+    font-size: 2.5rem;
+    margin: 5px;
+}
+
+.btn{
+    margin-top: 10px;
+    font-size: 1rem;
+    background: none;
+    border: none;
+}
+
+.btn:hover{
+    color: blue;
+}
