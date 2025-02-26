@@ -16,6 +16,7 @@
     --second-background-color: #fff;
     --text-color: black;
     --main-color: #00556e;
+    --footer-color: #000;
     --hover-color:#083e4f;
 }
 
@@ -27,7 +28,6 @@ html{
 body{
     background: var(--background-color);
     color: var(--text-color);
-    overflow: hidden;
 }
 
 
@@ -421,7 +421,7 @@ html {
     width: 100%;
     z-index: 1000;
     padding: 4rem 12% 4rem;
-    padding-top: 75px;
+    padding-top: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -687,8 +687,8 @@ section{
 }
 /* Members */
 .member_img{
-  width:25rem;
-  height: 30rem;
+  width:20rem;
+  height: 25rem;
   border-radius: 10px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3), -3px -3px 10px rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -795,7 +795,7 @@ button:hover {
   background-color: var(--hover-color);
 }
 
-.footer {
+/* .footer {
   background-color: #121212;
   color: white;
   text-align: center;
@@ -824,4 +824,51 @@ button:hover {
 
 .footer-social a:hover {
   color: var(--main-color);
+} */
+
+
+.footer{
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 40px 0;
+  background-color: var(--footer-color);
 }
+
+.footer .social{
+  text-align: center;
+  padding-bottom: 10px;
+  color: var(--main-color);
+}
+
+.footer .social a{
+  font-size: 25px;
+  color: white;
+  border: 1px solid white;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 10px;
+  transition: 0.2s ease;
+}
+
+.footer .social a:hover {
+  transform: scale(1.1)translateY(-5px);
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 25px white;
+}
+
+.footer .copyright {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+}
+/* For screens smaller than 768px */
+@media (max-width: 1285px) {
+}
+
