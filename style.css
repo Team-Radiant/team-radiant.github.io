@@ -601,11 +601,13 @@ section{
 .project_div {
   text-align: center;
   border-radius: 10px;
+  width: 30%; 
+  gap: 8px;
   /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
 }
 
 .project_div img {
-  width: 400px; 
+  width: 35rem; 
   height: auto;
   border-radius: 10px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3), -3px -3px 10px rgba(0, 0, 0, 0.2);
