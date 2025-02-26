@@ -658,15 +658,22 @@ section{
   display: block;
 }
 /* Members */
-.member_img>img{
+.member_img{
   width:35rem;
   height: 40rem;
-  transition: smooth;
+  
   border-radius: 8px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3), -3px -3px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.member_img>img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
 }
 .member_img>img:hover{
   box-shadow: 0px 0px 20px rgba(96, 107, 96, 0.8);
+  transform: scale(1.05);
   
 }
  .row{
