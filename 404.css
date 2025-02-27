@@ -19,12 +19,8 @@ body{
 
 .image{
     height: 80%;
-<<<<<<< HEAD
-    background-image: url('/team-radiant.github.io/assets/404 image/img.jpg');
-=======
     background-color: aqua;
     background-image: url(assets/404_img/img.jpg);
->>>>>>> 156bcff13ccf1c180375e31eb9bc753e4c5a9ac5
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -37,12 +33,7 @@ body{
 }
 
 .text{
-<<<<<<< HEAD
-    font-family: "Poppins", sans-serif;
-    font-size: 2.5rem;
-=======
     font-size: 3rem;
->>>>>>> 156bcff13ccf1c180375e31eb9bc753e4c5a9ac5
     margin: 5px;
     font-family: "Poppins", sans-serif;
     font-weight:800;
@@ -51,22 +42,15 @@ body{
 .btn{
     font-family: "Poppins", sans-serif;
     margin-top: 10px;
-<<<<<<< HEAD
-    font-size: 1.1rem;
-    background: none;
-    border: none;
-    display: flex;
-    gap: 5px;
-=======
     background: #00ff95;
     border: none;
     font-size: 1.2rem;
     padding: 1rem;
     font-weight: 800;
     border-radius: 50px
->>>>>>> 156bcff13ccf1c180375e31eb9bc753e4c5a9ac5
 }
 
 .btn:hover{
     background: #00d87e;
+    transition: 0.3s ease-in-out;
 }
