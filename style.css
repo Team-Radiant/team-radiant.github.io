@@ -339,7 +339,7 @@ section{
 }
 
 .home-content h1{
-    font-size: 7rem;
+    font-size: 6rem;
     font-weight: 700;
     margin-top: 1.5rem;
     line-height: 1;
@@ -368,7 +368,7 @@ section{
 
 .home-content-h3{
     font-weight: 600;
-    min-width: 280px;
+    /* min-width: 280px; */
 }
 
 .strong{
@@ -392,7 +392,7 @@ section{
 }*/
 
 .aboutus-content h2{
-  font-size: 7rem;
+  font-size: 6rem;
   font-weight: 700;
   padding-top: 1.5rem;
   line-height: 1;
@@ -415,7 +415,7 @@ section{
 }
 /* projects style section*/
 .project-text h2{
-  font-size: 7rem;
+  font-size: 6rem;
   font-weight: 700;
 }
 .project-text p{
@@ -496,7 +496,7 @@ section{
 }
 
 .members-content h2{
-  font-size: 7rem;
+  font-size: 6rem;
   font-weight: 700;
   margin-top: 1.5rem;
   line-height: 1;
@@ -504,16 +504,11 @@ section{
 
 .members-text{
   font-weight: 500;
-  font-size: 2.5rem;
+  font-size: 2rem;
   min-width: 280px;
   padding-top: 2rem;
 }
 
-.members-p{
-  font-weight: 500;
-  font-size: 2rem;
-  min-width: 280px;
-}
 .section {
   display: none;
 }
@@ -540,35 +535,6 @@ section{
   transform: scale(1.07);
   
 }
- .row{
-  width: fit-content;
-  height: fit-content;
-  /* margin: auto; */
- }
-.row-1{
-  display: flex;
-  width: 30%;
-  gap: 8rem;
-  flex-direction: row;
-  
-}
-
-
-.row-2{
-  display: flex;
-  justify-content: space-evenly;
-  width: 30%;
-  gap: 8rem;
-  flex-direction: row;
-}
-
-.row-3{
-  display: flex;
-  justify-content: space-evenly;
-  width: 30%;
-  gap: 8rem;
-  flex-direction: row;
-}
 
 
 
@@ -577,7 +543,6 @@ section{
 
 #contact-form{
   position: absolute;
-  width: 100%;
   margin-top: 2rem;
 }
 
@@ -587,13 +552,14 @@ form {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  max-width: 45%;
+  max-width: 100%;
+  width: 45%;
   margin: 0 auto;
   height: 700px;
 }
 
 .contact h2{
-  font-size: 7rem;
+  font-size: 6rem;
   font-weight: 700;
   margin-top: 1.5rem;
   line-height: 1;
@@ -603,7 +569,7 @@ textarea {
   height: 8%;
   padding: 2rem;
   font-size: 1.5rem;
-  border: 1px solid #c4c4c4;
+  border: 1px solid #616161;
   border-radius: 30px;
   font-weight: 800;
   opacity: 0.4;
@@ -707,8 +673,64 @@ button:hover {
   color: white;
 }
 
-
-@media (max-width: 1285px) {
-
+@media (max-width: 1025px) {
+  .navbar{
+    display: none;
+  }
+  #menu{
+    display: block;
+    animation: 0.2s ease;
+  }
+  #menu:hover{
+    transform: scale(1.2);
+  }
+  form{
+    width: 70%
+  }
 }
-
+@media (max-width: 400px) {
+    /* css goes here */
+.home-content h1{
+      font-size: 5rem;
+    }
+.aboutus-content h2{
+      font-size: 5rem;
+}
+.project-text h2{
+  font-size: 5rem;
+}
+.members-content h2{
+  font-size: 5rem;
+}
+.contact h2{
+  font-size: 5rem;
+}
+.home-content h3{
+  font-size: 2rem;
+}
+.aboutus-text{
+  font-size: 1.5rem;
+}
+.aboutus-list{
+  font-size: 1.5rem;
+}
+.project-text p{
+  font-size: 1.5rem;
+}
+.project_div img{
+  width: 100%;
+}
+.members-text{
+  font-size: 1.5rem;
+}
+.member_details>h3{
+  font-size: 2rem;
+}
+.socialMediaLinks>a{
+  font-size: 1.5rem;
+}
+.header{
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+}
