@@ -7,3 +7,34 @@ window.addEventListener('scroll', function () {
     }
 });
 
+// Mobile menu toggle
+document.addEventListener('DOMContentLoaded', function () {
+    const menuIcon = document.getElementById('menu');
+    const navbar = document.querySelector('.navbar');
+
+    menuIcon.addEventListener('click', function () {
+        navbar.classList.toggle('active');
+        // Change menu icon 
+        if (navbar.classList.contains('active')) {
+            menuIcon.classList.remove('uil-bars');
+            menuIcon.classList.add('uil-times');
+        } else {
+            menuIcon.classList.remove('uil-times');
+            menuIcon.classList.add('uil-bars');
+        }
+    });
+// close when link click
+    const navLinks = document.querySelectorAll('.navbar a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function () {
+            navbar.classList.remove('active');
+            menuIcon.classList.remove('uil-times');
+            menuIcon.classList.add('uil-bars');
+        });
+    });
+
+    window.addEventListener('scroll', highlightNavLink);
+    highlightNavLink(); // Call on page load
+
+  
+});
