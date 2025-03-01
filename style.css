@@ -333,7 +333,6 @@ section{
 }
 
 .home-content h3{
-    margin-bottom: 2rem;
     margin-top: 1rem;
     font-size: 3rem;
 }
@@ -379,10 +378,21 @@ section{
     display: flex;
     gap: 15rem;
 }
-
+.aboutus-content{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  text-align: left;
+  justify-content: center;
+}
 /* about us style section */
-.aboutus-content span{
+.aboutus-text span{
   color: var(--main-color);
+}
+.ab_headline{
+  display: inline-block;
+  font-weight: 700;
+  padding-bottom: 1rem;
 }
 /*
 .aboutus-content p{
@@ -413,6 +423,13 @@ section{
   padding-left: 3.8rem;
 }
 /* projects style section*/
+.project-content{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  text-align: left;
+  justify-content: center;
+}
 .project-text h2{
   font-size: 6rem;
   font-weight: 700;
@@ -457,11 +474,13 @@ section{
   transform: scale(1.03);
 }
 /*members style section*/
-.members {
+.members-content {
   display: flex;
-  gap: 15rem;
+  flex-direction: column;
+  align-items: baseline;
+  text-align: left;
+  justify-content: center;
 }
-
 .members-container {
   display: flex;
   gap: 2.5rem;
@@ -557,11 +576,13 @@ section{
 }
 
 /* contact */
-/* .contact {
-  min-height: auto;
-  padding-bottom: 5rem;
-
-} */
+.contact_content{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  text-align: left;
+  justify-content: center;
+}
 
 .contact h2 {
   font-size: 6rem;
@@ -686,7 +707,10 @@ button:hover {
     transform: scale(1.2);
   }
   #contact-form{
-    width: 70%
+    width: 90%
+  }
+  section{
+    padding: 10rem 6% 10rem;
   }
 }
 @media (max-width: 400px) {
