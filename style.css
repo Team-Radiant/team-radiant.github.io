@@ -328,7 +328,7 @@ margin: 0 16px;
   z-index: -1;
 }
 .gradient {
-  --size: 500px;
+  --size: 300px;
   --speed: 10s;
   --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
   width: var(--size);
@@ -341,11 +341,22 @@ margin: 0 16px;
 
 @media (min-width: 720px) {
   .background {
+    padding-left: 60%;
+  }
+  .gradient {
+    --size: 500px;
+  }
+}
+
+@media (max-width: 720px) {
+  .background {
     padding-left: 50%;
   }
   .gradient {
-    --size: 250px;
+    animation: none;
+    --size: 300px;
   }
+
 }
 body {
   /* background-color: transparent; */
