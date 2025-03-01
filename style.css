@@ -405,13 +405,12 @@ section{
   padding-top: 2rem;
 }
 
-
 .aboutus-list{
   font-weight: 500;
   font-size: 2rem;
   min-width: 280px;
   padding-top: 1.4rem;
-  padding-left: 5rem;
+  padding-left: 3.8rem;
 }
 /* projects style section*/
 .project-text h2{
@@ -558,11 +557,11 @@ section{
 }
 
 /* contact */
-.contact {
+/* .contact {
   min-height: auto;
   padding-bottom: 5rem;
 
-}
+} */
 
 .contact h2 {
   font-size: 6rem;
@@ -576,7 +575,7 @@ section{
 
 #contact-form {
   position: relative;
-  margin: 2rem ;
+  margin: 0rem;
   width: 60%;
   max-width: 100rem;
 }
@@ -616,7 +615,7 @@ button {
   border: none;
   font-weight: 700;
   font-size: 1.8rem;
-  padding: 1.2rem;
+  padding: 1.5rem;
   border-radius: 30px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -686,7 +685,7 @@ button:hover {
   #menu:hover{
     transform: scale(1.2);
   }
-  form{
+  #contact-form{
     width: 70%
   }
 }
