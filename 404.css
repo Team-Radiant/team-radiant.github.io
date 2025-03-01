@@ -68,7 +68,7 @@ body{
 
     .image {
         height: 50vh; 
-        background-size: cover;
+        background-size:auto;
         background-position: center;
     }
 
