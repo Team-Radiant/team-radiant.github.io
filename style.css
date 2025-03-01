@@ -778,6 +778,7 @@ button:hover {
 
   #menu {
     display: block;
+    animation: 0.2s ease;
   }
 
   #menu:hover {
@@ -792,17 +793,10 @@ button:hover {
   .header{
     padding: 4rem 8% 4rem;
   }
-
   .navbar a {
     display: block;
     margin: 1.5rem 0;
     font-size: 2rem;
-  }
-
-  .home,
-  .aboutus {
-    flex-direction: column;
-    gap: 5rem;
   }
 
   .project_div img {
@@ -814,70 +808,11 @@ button:hover {
   }
 }
 
-@media (max-width:768px) {
-  html {
-    font-size: 45%;
-  }
-
-  section {
-    padding: 8rem 6% 6rem;
-  }
-
-  .header {
-    padding: 2rem 6%;
-    height: 7rem;
-  }
-
-  .home-content h1 {
-    font-size: 5rem;
-  }
-
-  .aboutus-content h2,
-  .project-text h2,
-  .members-content h2,
-  .contact h2 {
-    font-size: 4.5rem;
-  }
-
-  .aboutus-list {
-    padding-left: 3rem;
-  }
-
-  .projects-container {
-    gap: 2rem;
-  }
-
-  .project_div img {
-    width: 25rem;
-  }
-
-  .member_img {
-    width: 18rem;
-    height: 22rem;
-  }
-
-  #contact-form {
-    max-width: 50rem;
-  }
-
-  .contact {
-    padding-bottom: 2.5rem;
-  }
-
-  .footer {
-    padding: 1.5rem 0;
-  }
-
-}
 
 @media (max-width: 400px) {
 
-  html {
-      font-size: 35%;
-    }
-  
     .header {
-      padding: 1.5rem 3%;
+      padding: 1.5rem 5%;
       height: 6rem;
     }
   
@@ -890,7 +825,7 @@ button:hover {
     }
   
     section {
-      padding: 6rem 3% 4rem;
+      padding: 6rem 5% 4rem;
     }
   
     .home-content h1 {
