@@ -286,13 +286,6 @@ html {
   box-sizing: border-box;
 }
 
-/* body {
-  min-height: 100vh;
-  background: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 .header {
   position: fixed;

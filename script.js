@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
             menuIcon.classList.add('uil-bars');
         }
     });
-// close when link click
+// close when link click section
     const navLinks = document.querySelectorAll('.navbar a');
     navLinks.forEach(link => {
         link.addEventListener('click', function () {
