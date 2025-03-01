@@ -46,8 +46,6 @@
                 <strong><span>Open-Source</span></strong>, useful <strong><span>Real-World</span></strong> projects by a
                 group of students.
             </h3>
-            <p>IDK if we need this section. If we get something useless to add here, then fine else we can remove it.
-            </p>
             <div class="social-icons">
                 <a href="https://github.com/Team-Radiant" target="blank"><i class="uil uil-github"></i></a>
                 <a href="https://www.linkedin.com/company/team-radiant" target="blank"><i
@@ -61,7 +59,7 @@
         <div class="aboutus-content">
             <h2>About Us</h2>
             <h5 class="aboutus-text">
-                <span class="strong">Powering Innovation: Student-Led Open Source Initiative! 💡</span><br>
+                <span class="ab_headline">Powering Innovation: Student-Led Open Source Initiative! 💡</span><br>
                 Introducing Team Radiant, a group of passionate students committed to building open-source projects that
                 solve real-world problems.
                 We're fostering a collaborative environment where students learn from each other, contribute on GitHub,
@@ -83,6 +81,7 @@
 
     <!-- projects -->
     <section class="projects" id="projects">
+        <div class="project-content">
             <div class="project-text">
             <h2>Projects</h2><br>
             <p>Discover our open-source projects designed to solve real-world problems, foster learning, and showcase teamwork in action.</p>
@@ -104,7 +103,8 @@
                     <img src="assets\img\project_placeholder.png" alt="Project img">
                 <h4>PROJECT 4</h4>
                 </div>    
-            </div> 
+            </div>
+        </div>
     </section>
     
     <!-- members -->
@@ -293,13 +293,15 @@
 
     <!-- contact -->
     <section id="contact" class="contact">
+        <div class="contact_content">
         <h2>Contact Us</h2>
-        <form id="contact-form">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <input type="message" placeholder="Your Message" required></input>
+        <form id="contact-form" action="https://formspree.io/f/mgvogyyp" method="POST">
+            <input type="text" id="name" placeholder="Your Name" name="Name" required>
+            <input type="email" id="email" placeholder="Your Email" name="E-Mail" required>
+            <input type="message" placeholder="Your Message" name="Message" required></input>
             <button type="submit">Send</button>
         </form>
+        </div>
     </section>
 
     <!-- footer -->
