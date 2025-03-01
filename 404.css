@@ -19,7 +19,6 @@ body{
 
 .image{
     height: 80%;
-    background-color: aqua;
     background-image: url(assets/404_img/img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -49,8 +48,39 @@ body{
     font-weight: 800;
     border-radius: 50px
 }
+.btn i{
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
 
 .btn:hover{
     background: #00d87e;
     transition: 0.3s ease-in-out;
+}
+/* mobile view */
+@media (max-width: 400px) {
+    .main {
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+        padding: 10px;
+    }
+
+    .image {
+        height: 50vh; 
+        background-size:auto;
+        background-position: center;
+    }
+
+    .text {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.7rem;
+        width: 90%;
+        max-width: 250px;
+    }
 }
