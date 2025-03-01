@@ -334,7 +334,7 @@ body {
   inset: 0;
   /* display: flex; */
   overflow: hidden;
-
+}
 .loader {
   display: inline-block;
   margin: 0 16px;
