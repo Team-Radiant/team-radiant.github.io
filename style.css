@@ -712,6 +712,9 @@ button:hover {
   section{
     padding: 10rem 8% 10rem;
   }
+  .header{
+    padding: 4rem 8% 4rem;
+  }
 }
 @media (max-width: 400px) {
     /* css goes here */
