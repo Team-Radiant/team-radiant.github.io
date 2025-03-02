@@ -318,10 +318,11 @@ margin: 0 16px;
 
   50% {
     stroke-dashoffset: 175;
+    transform: rotate(180deg);
   }
 
   75% {
-    stroke-dashoffset: 225;
+    stroke-dashoffset: 255;
   }
 
   100% {
@@ -334,10 +335,10 @@ margin: 0 16px;
   background-color: transparent; /* Make the body background transparent */
   position: fixed;
   display: flex;
-  padding-left: 60%;
+  /* padding-left: 60%; */
   justify-content: center;
   inset: 0;
-  align-items: center;
+  /* align-items: center; */
   height: 100vh;
   width: 100vw;
   overflow: hidden;
