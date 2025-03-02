@@ -7,6 +7,20 @@ window.addEventListener('scroll', function () {
     }
 });
 
+// loader on load remove
+window.onload = function() {
+    var loadingAnimation = document.getElementById('loader_content');
+    setTimeout(function() {
+        loadingAnimation.style.opacity = '0';
+        setTimeout(function() {
+            loadingAnimation.style.display = 'none';
+        }, 500);
+    }, 500);
+};
+
+
+
+
 // Mobile menu toggle
 document.addEventListener('DOMContentLoaded', function () {
     const menuIcon = document.getElementById('menu');

@@ -53,21 +53,37 @@ body {
   color: var(--text-color);
 }
 
+div#loader_content{
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: white;
+  transition: opacity 0.5s ease-out;
+  opacity: 1;
+}
+
+.loaded {
+  display: none;
+}
 
 
 .loader {
 --path: black;
---dot: #f40af0;
+--dot: var(--main-color);
 --duration: 3s;
-width: 44px;
-height: 44px;
+width: 50px;
+height: 50px;
 position: relative;
 }
 
 .loader:before {
 content: "";
-width: 6px;
-height: 6px;
+width: 10px;
+height: 10px;
 border-radius: 50%;
 position: absolute;
 display: block;
@@ -386,7 +402,7 @@ html {
     left: 0;
     height: 9rem;
     width: 100%;
-    z-index: 1000;
+    z-index: 2;
     padding: 4rem 12% 4rem;
     padding-top: 40px;
     display: flex;
@@ -398,21 +414,6 @@ html {
 *:before,
 *:after {
   box-sizing: border-box;
-}
-
-
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 9rem;
-  width: 100%;
-  z-index: 1000;
-  padding: 4rem 12% 4rem;
-  padding-top: 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .header.navblur {
