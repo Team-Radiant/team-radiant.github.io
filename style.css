@@ -350,7 +350,7 @@ margin: 0 16px;
   --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
   width: var(--size);
   height: var(--size);
-  filter: blur(100px);
+  filter: blur(calc(var(--size) / 4));
   background-image: linear-gradient(rgba(255, 122, 233, 0.85), #007396);
   animation: rotate var(--speed) var(--easing) alternate infinite;
   border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
