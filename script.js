@@ -10,12 +10,13 @@ window.addEventListener('scroll', function () {
 // loader on load remove
 window.onload = function() {
     var loadingAnimation = document.getElementById('loader_content');
+    window.scrollTo(0,0);  //home on reloded
     setTimeout(function() {
         loadingAnimation.style.opacity = '0';
         setTimeout(function() {
             loadingAnimation.style.display = 'none';
         }, 500);
-    }, 500);
+    }, 1000);
 };
 
 
@@ -28,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     menuIcon.addEventListener('click', function () {
         navbar.classList.toggle('active');
-        // Change menu icon 
+        // Change menu icon
         if (navbar.classList.contains('active')) {
             menuIcon.classList.remove('uil-bars');
             menuIcon.classList.add('uil-times');
@@ -37,7 +38,8 @@ document.addEventListener('DOMContentLoaded', function () {
             menuIcon.classList.add('uil-bars');
         }
     });
-// close when link click section
+
+    // Close menu -open menu
     const navLinks = document.querySelectorAll('.navbar a');
     navLinks.forEach(link => {
         link.addEventListener('click', function () {
@@ -47,8 +49,30 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    // Active section  link highlight
+    const sections = document.querySelectorAll('section');
+
+    function highlightNavLink() {
+        let scrollPosition = window.scrollY;
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 100;
+            const sectionHeight = section.offsetHeight;
+            const sectionId = section.getAttribute('id');
+
+            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#' + sectionId) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
+    }
+
     window.addEventListener('scroll', highlightNavLink);
     highlightNavLink(); // Call on page load
 
-  
+
 });
