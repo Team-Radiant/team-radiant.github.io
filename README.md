@@ -17,7 +17,7 @@ Welcome to **Team Radiant**! We are a group of passionate students committed to 
 
 ## 🌐 Live Demo
 
-Check out our live website: [Team Radiant](https://team-radiant.github.io)
+Check out our live website (portfolio): [Team Radiant](https://team-radiant.github.io)
 
 ---
 
