@@ -47,6 +47,15 @@ document.addEventListener('DOMContentLoaded', function () {
             menuIcon.classList.remove('uil-times');
             menuIcon.classList.add('uil-bars');
         });
+
+        document.addEventListener('click', function (event) {
+            if (!navbar.contains(event.target) && !menuIcon.contains(event.target) && navbar.classList.contains('active')) {
+                navbar.classList.remove('active');
+                menuIcon.classList.remove('uil-times');
+                menuIcon.classList.add('uil-bars');
+            }
+        });
+
     });
 
     // Active section  link highlight
